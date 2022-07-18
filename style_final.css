@@ -1,0 +1,36 @@
+#container,header,footer,#page {border: solid 1px; margin: 5px;}
+#page_main, #page_sub {border: inherit; margin: inherit;}
+header,main,footer,article,aside,section,nav {display: block;}
+#container {width: 900px; margin: 0 auto; text-align: center;}
+#global_nav ul li {display: inline-block;width: 150px; list-style-type: none;}
+#global_nav ul li a {display: block; color: white; background: gray; padding: 5px 0; text-align: center; text-decoration: none;} 
+#global_nav ul li a:hover {background:royalblue;}
+#page_main {display: inline-block; vertical-align: top;}
+#page_sub {display: inline-block;vertical-align: top;}
+.index_style1 {width: 63%;}
+.index_style1 ul li {text-align: left; width: 370px; margin: 0 auto;}
+.index_style2 {width: 33%;}
+.index_style2 ul li {text-align: left; width: 100px; margin: 0 auto;}
+.index_style3 {width: 50%;}
+.index_style3 ul li {text-align: left; width: 370px; margin: 0 auto;}
+.index_style4 {width: 45%;}
+.index_style4 ul li {text-align: left; width: 75px; margin: 0 auto;}
+.m{padding:0;}
+.corona{color: white; background-color:red;}
+.jyouhou{color:red;}
+body{background-color: oldlace;}
+
+.img_block1     {display: inline-block; vertical-align:top; }
+.img_block1 img {width:200px; height:150px ;border: solid 1px; margin: 10px 15px 0 20; }
+.img_block2     {display: inline-block; vertical-align:top;}
+.img_block2 img {width:450px; height:200px ;border: solid 1px; margin: 10px  0px 0 0;}
+.img_block3     {display: inline-block; vertical-align:top;}
+.img_block3 img {width:300px; height:350px ;border: solid 1px; margin: 10px  0px 0 0; }
+.img_block4     {display: inline-block; vertical-align:top;}
+.img_block4 img {width:330px; height:200px ;border: solid 1px; margin: 0px  0px 0 0; }
+.block {display:inline-block; text-align:left; width:300px; font-size:15px;}
+
+#page #campaign_layout {text-align: center; width: 50%; margin: 0 auto 0 auto;}
+.campaign_table {border-collapse: collapse; margin: 10px auto 0 auto;}
+.campaign_table td,th {padding: 0.5em;}
+.campaign_table caption {caption-side: bottom; text-align: left; margin:0;}
