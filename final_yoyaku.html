@@ -1,0 +1,126 @@
+<!DOCUTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>病院サイト</title>
+<link rel="stylesheet" href="style_final.css">
+</head>
+<style>
+#global_nav ul li a:hover{color:white;background:royalblue;}
+caption p{margin-left:auto; margin-right:-30px; margin-top:0px; margin-bottom:20px;}
+body{text-align:center;}
+.block5{color:sienna;color: sienna; }
+h3{color:sienna;}
+h4{color:red;}
+</style>
+<body>
+<div id="container">
+<header>
+<h1>診療情報と予約</h1>
+<h3>24時間・365日安全と確かな技術を提供します</h3>
+<nav id="global_nav">
+<ul>
+<li><a href="index.html">病院トップ</a></li>
+<li><a href="final_yoyaku.html">診療情報と予約</a></li>
+<li><a href="final_access.html">交通アクセス</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<div id="page">
+<div id="page_main" class="index_style3">
+<article>
+<section>
+<h2 class="block5">診療曜日と時間</h2>
+<table border class="campaign_table">
+<caption><p>×は休診、△は予約診療のみです。<br>
+※救急の場合は24時間365日対応<br>
+電話番号 04-2938-9999</br></p>
+<div class="img_block4">
+<img src="final12.png"  alt="">
+</div>
+<h4>休診日<br>
+土曜日午後・日曜日・祝日・お盆・年末年始</br></h4>
+</caption>
+<tr><th rowspan="2">診療時間</th><th colspan="7">曜日</th>
+</tr>
+<tr><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th>
+<th style="color:blue;">土</th><th style="color:red;">日</th>
+</tr>
+<tr><th>9時～12時</th><th>〇</th><th>△</th><th>〇</th><th>△</th><th>〇</th><th>△</th><th>×</th>
+</tr>
+<tr><th>14時～17時</th><th>〇</th><th>〇</th><th>〇</th><th>〇</th><th>〇</th><th>△</th><th>×</th>
+</tr>
+<tr><th>17時～19時</th><th>〇</th><th>〇</th><th>〇</th><th>〇</th><th>〇</th><th>×
+</th><th>×</th>
+</tr>
+</table>
+</section>
+</ul>
+</article>
+</div>
+<div id="page_sub" class="index_style4">
+<aside>
+<section>
+<div class="block">
+<h3 class="hospital3">ご登録済み会員さまWeb予約</h3>
+<form method="post" action="データ送信先URL">
+<p>氏名 <input type="text" name="guestname"></p>
+<p>パスワード <input type="password" name="guestpw"></p>
+<p>ご希望診療科は？(一つだけ選択)<br>
+<select name="deliverytime" size="5">
+  <option value="外科"> 外科</option>
+  <option value="耳鼻科"> 耳鼻科</option>
+  <option value="皮膚科"> 皮膚科</option>
+  <option value="眼科"> 眼科</option>
+  <option value="泌尿器科"> 泌尿器科</option>
+</select>
+</p>
+<p>診察ご希望時間帯選択(複数選択可)<br>
+<select name="deliverytime[]" multiple size="3" >
+  <option value="9時から12時"> 9時から12時</option>
+  <option value="14時から17時"> 14時から17時</option>
+  <option value="17から19時"> 17時から19時</option>
+</select>
+</p>
+<p>診察ご希望曜日選択(複数選択可)<br>
+<select name="deliverytime[]" multiple size="6">
+  <option value="月曜"> 月曜</option>
+  <option value="火曜"> 火曜</option>
+  <option value="水曜"> 水曜</option>
+  <option value="木曜"> 木曜</option>
+  <option value="金曜"> 金曜</option>
+  <option value="土曜"> 土曜</option>
+  <option value="日曜"> 日曜</option>
+</select>
+</p>
+<p>ジェネリック医薬品<br>
+  <label><input type="radio" name="payment" value="希望する">希望する</label>
+  <label><input type="radio" name="payment" value="希望しない">希望しない</label>
+  <label><input type="radio" name="payment" value="医薬品による" checked>医薬品による</label>
+</p>
+<p> 当院に来られるのは初めてですか？ <br>
+<label>
+<input type="checkbox" name="genre" value="yes"> はい </label>
+<label>
+<input type="checkbox" name="genre" value="no"> いいえ</label>
+</p>
+<p>症状・ご相談<br>
+<textarea name="textarea" cols="30" rows="3" placeholder="ご自由にお書きください。">
+</textarea>
+</p>
+<p><input type="submit" value="予約">
+<input type="reset" value="リセット"></p>
+</section>
+</aside>
+</div>
+</div>
+</main>
+<footer>
+<p><small>Copyright &copy;<a href="index.html">入間武蔵藤沢病院</a>
+All Rights Reserved.</small></p>
+</footer>
+</div>
+<h2></h2>
+</body>
+</html>
